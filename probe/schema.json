@@ -1,0 +1,30 @@
+{
+  "type": "object",
+  "properties": {
+    "config": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "L'indirizzo del server SSH."
+        },
+        "remote_model_path": {
+          "type": "string",
+          "description": "Il percorso del modello remoto sul server."
+        },
+        "model_type": {
+          "type": "string",
+          "description": "Il tipo di modello (es. 'RandomForest', 'CNN', 'LSTM').",
+          "enum": ["RandomForest", "CNN", "LSTM"]
+        }
+      },
+      "required": [
+        "target",
+        "remote_model_path",
+        "model_type"
+      ]
+    }
+  },
+  "required": ["config"]
+}
+
