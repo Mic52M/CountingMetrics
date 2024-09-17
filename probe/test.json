@@ -1,6 +1,6 @@
 {
   "config": {
-    "target": "3.70.98.116",
+    "target": "IPAddress",
     "remote_model_path": "/home/ec2-user/apps/models/rf_spam_model_optimized.joblib",
     "model_type": "RandomForest"
   }
